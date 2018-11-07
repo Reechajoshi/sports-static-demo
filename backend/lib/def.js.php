@@ -1,0 +1,3 @@
+
+CUi = function() {}
+CTalk = function() {}

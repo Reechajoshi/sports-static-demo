@@ -1,0 +1,17 @@
+Vivek
+Image, Template plugin has been changed.
+Orgmail plugin has been added.
+
+Rahul(06/06/2011):
+
+Added the following code in config.js before the code "config.toolbar_BasicToolbar =" (to remove div and p tags and also add br tag on enter in the editor)
+	config.enterMode = CKEDITOR.ENTER_BR;
+	config.removeFormatTags = config.removeFormatTags + ',div,p';
+	
+Commented the following code in ckeditor.js (title is added with the code below)
+	new d.text(S.title,a.document).appendTo(this.parts.title);
+	
+Changed the following code in ckeditor.js (brings the buttons on top of dialogs)
+	this.parts.footer.setHtml(an.join(''))
+					TO
+	this.parts.title.setHtml(S.title+'<br/><br/>'+an.join(''))

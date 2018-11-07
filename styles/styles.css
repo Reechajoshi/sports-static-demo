@@ -1,0 +1,116 @@
+body
+{
+padding :0px;
+margin :0px;
+}
+
+#wrapper {
+	width:100%;
+	position:relative;
+	
+	margin:0 auto;
+	padding:0px 0 40px 0;
+	min-width:1000px;
+	max-width:1366px; /*change later*/
+}
+
+#thumbnailBlock {
+	/*width:80%;*/
+	margin-left:auto;
+	margin-right:auto;
+	//padding-top:50px;
+}
+
+.thumbAll {
+	padding:15px; /*check is this works across viewports*/
+	float:left;
+	//display:block;
+	//font-size:90%;
+	width:25%;
+}
+
+img {
+	max-width:100%;
+	height:auto;
+}
+
+#header2 {
+	background-image:url(../images/rb2.jpg);
+	background-position:bottom;
+	background-repeat:repeat-x;
+	height:7px;
+}
+div.bk
+{
+text-align:center;
+background-color:#181818;
+}
+
+.abtus
+{ 
+
+border-bottom: 1px solid #D5D5D5;
+padding : 10px 0px;
+position: relative;
+}
+
+div.txtcol
+{
+color :#333333;
+}
+#columns div { 
+        height:100px; 
+        width:100px; 
+        border:1px solid red; 
+        margin-left:5px; 
+        float:left; /*Here you can also used display-inline:block instead of float:left*/
+        background:orange 
+}
+
+#product-group
+{
+   background: none repeat scroll 0 0 #FFFFFF;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: left;
+}
+.product
+{
+	float: left;
+    height: 170px !important;
+    margin: 10px 0 0 36px;
+    padding: 0;
+    position: relative;
+    width: 154px !important;
+}	
+div.product-left
+{
+width : 228px;
+width:142px;
+}
+img.mtb-img {
+    border: medium none;
+    bottom: 1px;
+    height: 150px;
+    left: 1px;
+    position: absolute;
+    right: 1px;
+    text-align: center;
+    top: 1px;
+    width: 150px;
+}
+.container1 {
+
+	width:15%;
+	float:left;
+	height:100%;
+	
+}
+.container2{
+	height:100%;
+	float : left;
+
+
+}

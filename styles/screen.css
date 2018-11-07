@@ -1,0 +1,597 @@
+body {
+	margin:0;
+	padding:0;
+	border:0;			/* This removes the border around the viewport in old versions of IE */
+	width:100%;
+	background:#fff;
+	min-width:600px;   	/* Minimum width of layout - remove line if not required */
+					/* The min-width property does not work in old versions of Internet Explorer */
+	font-family : "Trebuchet" , "Trebuchet MS" , "Tahoma";
+	font-size : 1em;
+}
+
+.top-head
+{
+	font-size : 1.2em;
+	font-weight: 700;
+	color : #004B91 ;
+	margin-bottom:15px;
+	margin-top:15px;
+}
+
+.nav-loc-head
+{
+ 	font-size : 1.1em;
+	font-weight: 700;
+	color : #004B91 ;
+	margin-bottom:2px;
+	text-decoration: none;
+}
+ 
+a:visited.nav-loc-a, a:link.nav-loc-a, a:active.nav-loc-a {
+	font-size : 1em;
+	font-weight: 700;
+	color : #004B91 ;
+	margin-bottom:2px;
+	text-decoration: none;
+}
+ 
+a:hover.nav-loc-a {
+	text-decoration: underline; 
+}
+ 
+.nav-loc-sep
+{
+	font-size : 0.9em;
+	font-weight: 700;
+	color : #555;
+	padding-left:5px;
+	padding-right:5px;
+	position:relative;
+	top:-1px;
+}
+
+a img{
+	border:0; /*IE fix */
+}
+
+#header img
+{
+	max-width:100%;
+	height:auto;
+}
+
+#NavBlock {  /* imp */
+	/*width:80%;*/
+	clear:both; 
+	margin : 0 auto;
+	min-width:500px;
+	padding-top:10px;
+}
+
+.nav-all-con
+{
+	position:relative;
+	top:-115px;
+	text-align:center;
+	z-index:100;
+	margin:0 auto;
+	padding-left:5px;
+	height:40px;
+}
+
+.NavAll { 
+	padding-left:2px; /*check if this works across viewports*/
+	float:left;
+	display:block;
+	width:12%;
+}
+
+.NavAll img {
+	max-width:100%;
+	height:auto;
+}
+
+.NavAll img:hover{
+ /* background-image:url(../../img/bg_hover.png); */
+	background:url(../../img/bg_hover_resize.png);	
+}
+
+h1, h2, h3 {
+	//margin:.8em 0 .2em 0;
+	padding:0;
+	font-size : 1.2em;
+	line-height:5px;
+}
+/*
+p {
+	margin:.4em 0 .8em 0;
+	padding:0;
+}
+*/
+#ads img {
+	display:block;
+	padding-top:10px;
+}
+
+/* Header styles */
+#header {
+	/* clear:both; */
+	width:100%;
+	background-color:#181818;
+}
+#header-bg {
+	background-image:url(../../img/rb2.jpg);
+	background-repeat:repeat-x;
+	height:7px;
+}
+#header2 {
+	background-image:url(../../img/rb2.jpg);
+	background-position:bottom;
+	background-repeat:repeat-x;
+	height:7px;
+}
+
+#header p,
+#header h1,
+#header h2 {
+	padding:.4em 15px 0 15px;
+	margin:0;
+}
+#header ul {
+	clear:left;
+	float:left;
+	width:100%;
+	list-style:none;
+	margin:10px 0 0 0;
+	padding:0;
+}
+#header ul li {
+	display:inline;
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+#header ul li a {
+	display:block;
+	float:left;
+	margin:0 0 0 1px;
+	padding:3px 10px;
+	text-align:center;
+	background:#eee;
+	color:#000;
+	text-decoration:none;
+	position:relative;
+	left:15px;
+	line-height:1.3em;
+}
+#header ul li a:hover {
+	background:#369;
+	color:#fff;
+}
+#header ul li a.active,
+#header ul li a.active:hover {
+	color:#fff;
+	background:#000;
+	font-weight:bold;
+}
+#header ul li a span {
+	display:block;
+}
+/* 'widths' sub menu */
+#layoutdims {
+	clear:both;
+	background:#eee;
+	border-top:4px solid #000;
+	margin:0;
+	padding:6px 15px !important;
+	text-align:right;
+}
+/* column container */
+.colmask {
+	position:relative;	/* This fixes the IE7 overflow hidden bug */
+	clear:both;
+	float:left;
+	width:100%;			/* width of whole page */
+	overflow:hidden;		/* This chops off any overhanging divs */
+}
+/* common column settings */
+.colright,
+.colmid,
+.colleft {
+	float:left;
+	width:100%;
+	position:relative;
+	/*
+	border-right:1px solid #760209;
+	*/
+}
+.col1,
+.col2,
+.col3 {
+	float:left;
+	position:relative;
+	padding:0 0 1em 0;
+	overflow:hidden;
+}
+/* 2 Column (left menu) settings */
+.leftmenu {
+	background:#fff;		/* right column background colour */
+}
+.leftmenu .colleft {
+	right:78%;			/* right column width */
+	background:#f4f4f4;	/* left column background colour */
+}
+.leftmenu .col1 {
+	width:74%;			/* right column content width */
+	left:102%;		/* 100% plus left column left padding */
+	min-height:480px;  /* Shrikant's addition */
+}
+.leftmenu .col2 {
+	width:18%;			/* left column content width (column width minus left and right padding) */
+	left:6%;			/* (right column left and right padding) plus (left column left padding) */
+}
+/* Footer styles */
+#footer {
+	clear:both;
+	float:left;
+	width:100%;
+	border-top:1px solid #ccc;
+}
+
+#product-group
+{
+   background: none repeat scroll 0 0 #FFFFFF;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: left;
+}
+.product
+{
+	float: left;
+    height: 170px !important;
+    margin: 10px 0 0 36px;
+    padding: 0;
+    position: relative;
+    width: 154px !important;
+}	
+div.product-left
+{
+	width : 228px;
+	width:142px;
+}
+
+.thumbAll img { 
+	max-width:100%;
+	height:auto;
+	/*	border:1px solid #181818; */
+}
+
+img.mtb-img {
+    border: medium none;
+    bottom: 1px;
+    height: 150px;
+    left: 1px;
+    position: absolute;
+    right: 1px;
+    text-align: center;
+    top: 1px;
+    width: 150px;
+}
+#thumbnailBlock {  /* imp */
+	/*width:80%;*/
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:0px;
+}
+
+.item-head
+{
+	font-size : 1em;
+	font-weight: 400;
+	color : #004B91 ;
+	margin-bottom:5px;
+	margin-top:5px;
+	border-bottom:1px solid #ccc;
+	clear: both;
+	padding-top:10px;
+}
+
+.thumbAll { 
+	padding:0px 15px 15px 0px; /*check is this works across viewports*/
+	margin:3px;
+	float:left;
+	display:block;
+	font-size:90%;
+	width:20%;
+	border: #ccc 1px outset;
+	/*	border-left :1px solid #eee; */
+}
+
+.captionThumb
+{
+	border-top: #ccc 1px solid;
+	padding-left:5px;
+	color: #004B91;
+	background-color: #ddd;
+	height: 65px;
+	overflow:hidden;
+}
+
+a:visited.caption-thumb-namea, a:link.caption-thumb-namea, a:active.caption-thumb-namea {
+	color: #222;
+	font-size: 1.2em;
+	text-decoration: none;
+}
+ 
+a:hover.caption-thumb-namea {
+	text-decoration: underline; 
+ }
+
+ a:visited.main-menu-a, a:link.main-menu-a, a:active.main-menu-a {
+	color: #444;
+	font-size: 0.9em;
+	text-decoration: none;
+}
+ 
+a:hover.main-menu-a {
+	text-decoration: underline; 
+}
+
+.some-sep
+{
+	color:#ccc;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+.sub-menu-no-a
+{
+	color: #005EB6;
+	font-size: 0.75em;
+	text-decoration: none;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+ a:visited.sub-menu-a, a:link.sub-menu-a, a:active.sub-menu-a {
+	color: #005EB6;
+	font-size: 0.75em;
+	text-decoration: none;
+}
+ 
+a:hover.sub-menu-a {
+	text-decoration: underline; 
+}
+ 
+#prod_desc
+{
+	min-width:300px;
+	max-width:600px;
+	font-family : "Trebuchet" , "Trebuchet MS" , "Tahoma";
+	font-size : 1em;
+	background : #f4f4f4;
+}
+
+#prod_desc strong
+{
+	font-size : 1.2em;
+	color : #760209 ;
+}
+
+ul li
+	{
+		list-style-type:none;
+	}
+
+
+ul li a{
+  
+   transition: color 1s ease-in;
+   -moz-transition: color 1s ease-in;
+   -webkit-transition: color 1s ease-in;
+   -o-transition: color 1s ease-in;
+   }
+ 
+.current_lnk
+ {
+	color : #335499;
+	font-weight:bold;
+	text-transform:capitalize;
+	height: 30px;
+ }
+ 
+.abtus
+{ 
+	border : 1px solid #D5D5D5;
+	padding : 10px 10px 5px 10px;
+	position: relative;
+	color :#333333;
+	background:#f4f4f4; /* old #eee #f4f4f4 */
+	/* text-align:justify; */
+}
+
+ .abtus b {
+ color:#33333;
+ }
+ 
+ .cntus
+{ 
+border : 1px solid #D5D5D5;
+padding : 10px 10px 5px 10px;
+position: relative;
+color :#333333;
+background:#f4f4f4; /* old #eee #f4f4f4 */
+}
+ 
+ 
+ .title2{
+ font-size:20px;
+ color:#760209 !important;
+ font-weight:400;
+ border-bottom:1px solid #760209;
+ }
+ 
+
+#navside {	
+	margin:0 auto;
+	padding: 0px;
+	z-index:9000;
+	width: 100%;
+}
+
+a:visited.navside-tosel, a:link.navside-tosel, a:active.navside-tosel {
+	color:#369;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	margin: 3px;
+	display: inline-block;
+	width: 85%;
+	border: #ccc 1px solid;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	text-decoration: none;
+}
+ 
+a:hover.navside-tosel {
+	background: #ddd;
+	background: -webkit-linear-gradient(bottom, #ccc,  #fff 20px); 
+	background: -moz-linear-gradient(bottom,  #ccc,  #fff 20px); 
+	background: linear-gradient(bottom,  #ccc, #fff 20px); 
+	text-decoration: none; 
+ }
+ 
+div.navside-donesel
+ {
+	color:#369;
+ 	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	margin: 3px;
+	display: inline-block;
+	margin-left:10px;
+	width: 85%;
+	border: #ccc 1px solid;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	text-decoration: none;
+	background: #ddd;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#000000'); 
+	background: -webkit-linear-gradient(bottom,  #ccc,  #fff 15px); 
+	background: -moz-linear-gradient(bottom,  #ccc,  #fff 15px); 
+	background: linear-gradient(bottom,  #ccc, #fff 15px); 
+	text-decoration: none;
+}
+ 
+div.navhead-prod-field
+ {
+	color : #335499;
+	font-weight:bold;
+	text-transform:capitalize;
+	height: 30px;
+	border-bottom: #D50000 3px solid
+ }
+ 
+ .declmain
+ {
+	font-family : "Trebuchet" , "Trebuchet MS" , "Tahoma";
+	font-size : 0.9em;
+	font-weight: 700;
+	color : #888;
+ }
+  
+ .declsec
+ {
+	font-family : "Trebuchet" , "Trebuchet MS" , "Tahoma";
+	font-size : 0.9em;
+	font-weight: 400;
+	color : #aaa;
+ }
+ 
+div.gc-wrap
+{
+	overflow: hidden;
+	z-index:6;
+	white-space: normal;
+}
+div.gc
+{
+	overflow: hidden;
+	text-align: left;
+	white-space: nowrap;
+	clear: right;
+	z-index:6;
+}
+
+div.gsc, div.asb
+{
+	float: left;
+	text-align: left;
+	white-space: nowrap;
+	margin: 0px;
+	padding: 0px;
+	z-index:11;
+}
+
+div.top-main-con
+{
+	background: #000 url(../img/t-rep.jpg) top left repeat;
+
+}
+
+.home img {
+	max-width:100%;
+	height:auto;
+}
+
+.contentInnerBlock {
+	width:70%;
+	max-width:1366px; 
+	padding:30px;
+	margin:0 auto;
+	margin-top:50px;
+	font-family:Arial, Helvetica, sans-serif;
+	line-height:1.5;
+	background:rgba(170,170,170,0.1); 
+	-moz-box-shadow:0px 0px 10px rgba(255,255,255,0.1);
+	-webkit-box-shadow:0px 0px 10px rgba(255,255,255,0.1);
+	box-shadow:0px 0px 10px rgba(255,255,255,0.1);
+}
+
+.contentInnerBlock p {
+	padding-bottom:12px;
+}
+
+.contentInnerBlock p:last-child {
+	padding-bottom:0;
+}
+
+.linkCurrently {
+	padding:15px 0;
+	overflow:hidden;
+	border-bottom:1px solid rgba(0,0,0,0.3); 
+}
+
+.linkCurrentlyText {
+	width:60%;
+	padding:0 10px 0 0;
+	float:left;
+}
+
+.linkCurrentlyImg {
+	width:40%;
+	float:right;
+}
+
+div.shade-right
+{
+	background: -webkit-linear-gradient(right, #aaa, #fff 65%); 
+	background: -moz-linear-gradient(right, #aaa, #fff 65%); 
+	background: linear-gradient(right, #aaa, #fff 65%); 
+}
